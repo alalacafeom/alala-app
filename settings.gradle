@@ -1,27 +1,17 @@
-plugins {
-    id 'com.android.application'
-}
-
-android {
-    namespace 'com.alala.cashier'
-    compileSdk 34
-
-    defaultConfig {
-        applicationId 'com.alala.cashier'
-        minSdk 21
-        targetSdk 33
-        versionCode 1
-        versionName '1.0'
-    }
-    compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
-    }
-    lint {
-        abortOnError false
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
     }
 }
-
-dependencies {
-    implementation 'com.sunmi:printerlibrary:1.0.13'
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        maven { url 'https://repo1.maven.org/maven2/' }
+    }
 }
+rootProject.name = 'alala-cashier'
+include ':app'
