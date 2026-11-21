@@ -29,7 +29,7 @@ import com.sunmi.peripheral.printer.SunmiPrinterService;
 public class MainActivity extends Activity {
 
     // The cashier page (GitHub Pages). Change here if the address ever changes.
-    private static final String PAGE = "https://alalacafeom.github.io/cashier.html";
+    private static final String PAGE = "https://alalacafeom.github.io/alalacafe.github.io/cashier.html";
     private static final String HOST = "alalacafeom.github.io";
 
     private WebView web;
